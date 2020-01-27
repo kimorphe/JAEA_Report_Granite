@@ -1,0 +1,12 @@
+\begin{table}[h]
+	\begin{center}
+	\caption{分子間相互作用ポテンシャル.}
+	\vspace{3mm}
+	\begin{tabular}{c|c|c|c|c}
+		膨潤状態 & 0層 & 1層 & 2層 & 3層 \\
+		\hline
+		特性距離$\sigma$[{\rm nm}]& 0.9 & 1.2 & 1.5 & 1.8 \\
+	\end{tabular}
+	\label{tbl:tbl1}
+	\end{center}
+\end{table}
