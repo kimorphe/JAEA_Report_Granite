@@ -1,7 +1,7 @@
 report2019.pdf: report.dvi
 	dvipdfmx -p a4 report.dvi
 
-report.dvi: report.tex sec2.tex sec3.tex Figs/fig1.eps Figs/fig2.eps Figs/fig3.eps Figs/fig4.eps Figs/fig5.eps Figs/fig5_2.eps Figs/fig5_3.eps Figs/fig6.eps Figs/fig7.eps Figs/fig8.eps Figs/fig9.eps  Figs/fig10.eps
+report.dvi: report.tex sec2.tex sec3.tex Figs/fig1.eps Figs/fig2.eps Figs/fig3.eps Figs/fig4.eps Figs/fig5.eps Figs/fig5_2.eps Figs/fig5_3.eps Figs/fig6.eps Figs/fig7.eps Figs/fig8.eps Figs/fig9.eps Figs/fig10.eps Figs/fig11.eps Figs/fig11_1.eps Figs/fig11_2.eps Figs/fig12.eps Figs/fig13.eps Figs/fig14.eps
 	platex  report.tex
 
 Figs/fig1.eps: Figs/sample.svgz
@@ -29,4 +29,17 @@ Figs/fig9.eps: Figs/afft0.eps
 	cp Figs/afft0.eps Figs/fig9.eps
 Figs/fig10.eps: Figs/phs0.eps
 	cp Figs/phs0.eps Figs/fig10.eps
+Figs/fig11.eps: Figs/corr0.eps
+	cp Figs/corr0.eps Figs/fig11.eps
 
+Figs/fig11_1.eps: Figs/ascan_filt.svgz
+	inkscape -z -f Figs/ascan_filt.svgz -E Figs/fig11_1.eps
+Figs/fig11_2.eps: Figs/afft_filt.svgz
+	inkscape -z -f Figs/afft_filt.svgz -E Figs/fig11_2.eps
+
+Figs/fig12.eps: Figs/vels.svgz
+	inkscape -z -f Figs/vels.svgz -E Figs/fig12.eps
+Figs/fig13.eps: Figs/fmax.svgz
+	inkscape -z -f Figs/fmax.svgz -E Figs/fig13.eps
+Figs/fig14.eps: Figs/amax.svgz
+	inkscape -z -f Figs/amax.svgz -E Figs/fig14.eps
